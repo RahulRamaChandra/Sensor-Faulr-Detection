@@ -1,0 +1,4 @@
+leaCreating conda venv --> conda create -p venv python==3.8 -y
+To activate venv    --> conda activate venv/
+To deactivae venv   --> conda deactivae
+To remove venv      --> rm -rf venv/

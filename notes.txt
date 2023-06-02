@@ -1,4 +1,43 @@
-leaCreating conda venv --> conda create -p venv python==3.8 -y
+Virtual Enviornement
+--------------------
+
+Creating conda venv --> conda create -p venv python==3.8 -y
 To activate venv    --> conda activate venv/
 To deactivae venv   --> conda deactivae
 To remove venv      --> rm -rf venv/
+
+git commands
+------------
+git add. && git commit -m "<message>"
+
+Installing requirements.txt
+-------------------------
+pip install -r requirements.txt
+
+Prerequisites - Knowledge required for following topics
+-------------
+version control
+docker
+amazon s3 bucket
+    > S3 - Simple Storage Service
+        - difference between object storage vs file storage
+ORM - Object Relational Mapping
+Entity relationship
+
+Project steps
+------
+
+1. Create the project directory(Package name) -  "Sensor"
+2. Define setup.py file for packaging
+    > Define function for get the requirement list from requirement.txt
+3. Define the folder structure in "Sensor"
+    > pipeline - to define training pipeline
+    > components - define each machine learning components  
+    > data_access - to communicate with the database and create .csv file
+    > cloud-storage - files related to S3 bucket
+        -codes for saving, uploading and downloading data from S3 bucket
+    > configuration - codes related to handle the configuration related to different connections
+    > constant - define the constant values such as folder names.
+    > exception.py - code to write custom exceptions
+    > logger.py - code for logging
+
